@@ -8,7 +8,6 @@ import { ActorsListService } from '../../services/actors-list.service';
   selector: 'actor-selector',
   templateUrl: './actor-selector.component.html',
   styleUrls: ['./actor-selector.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ActorSelectorComponent implements OnInit {
   _actors$: Observable<Actor[]> = new Observable();
